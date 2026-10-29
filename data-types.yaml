@@ -1,0 +1,26 @@
+-name: course information details
+  hosts: local
+  connection: local
+  vars:
+    course: "DevOps with Ansible"
+    duration_in_hrs: 200
+    is_live_sessions: true
+    topics:
+      -linux
+      -shell
+      -ansible
+      -terraform
+    more_details:
+      tarainer: "siva"
+      months: 5
+    class_start_time: 7:30  
+  tasks:
+    -name: print data types
+      debug:
+        msg: |
+          course: {{ course }} : {{ course | type_debug }}
+          duration: {{ duration_in_hrs }} : {{ duration_in_hrs | type_debug }}
+          live sessions: {{ is_live_sessions }} : {{ is_live_sessions | type_debug }}
+          topics: {{ topics }} : {{ topics | type_debug }}
+          more details: {{ more_details }} : {{ more_details | type_debug }}
+          class start time: {{ class_start_time }} : {{ class_start_time | type_debug }}  
