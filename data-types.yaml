@@ -1,3 +1,4 @@
+---
 -name: course information details
   hosts: local
   connection: local
