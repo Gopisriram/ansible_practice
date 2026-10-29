@@ -11,4 +11,4 @@
         msg: |
           os family: {{ ansible_facts['os_family'] }}
           ip address: {{ ansible_facts['default_ipv4']['address'] }}  
-          date_time: {{ ansible_facts['date_time'] }}
+          date_time: {{ ansible_facts['date_time']['date'] }}
