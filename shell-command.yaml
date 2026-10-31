@@ -1,0 +1,12 @@
+- name: shell vs command
+  hosts: local
+  connection: local
+  tasks:
+    - name: test the commnd module
+      command: cat /etc/passwd
+      register: suresh_output
+
+    - name: print the output
+      debug:
+        msg: "{{ suresh_output.stdout }}"
+      
