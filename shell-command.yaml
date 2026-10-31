@@ -3,7 +3,7 @@
   connection: local
   tasks:
     - name: test the commnd module
-      command: cat /etc/passwd
+      command: cat /etc/passwd | grep suresh
       register: suresh_output
 
     - name: print the output
