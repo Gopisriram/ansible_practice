@@ -4,6 +4,6 @@
   connection: local
   become: yes
   tasks:
-   -name: create user
+   - name: create user
      user:
-       name: suresh
+      name: suresh
