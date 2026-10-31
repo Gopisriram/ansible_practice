@@ -1,4 +1,3 @@
----
 - name: Course information details
   hosts: local
   connection: local
@@ -30,3 +29,4 @@
           topics: {{ topics }} : {{ topics | type_debug }}
           more details: {{ more_details }} : {{ more_details | type_debug }}
           class start time: {{ class_start_time }} : {{ class_start_time | type_debug }}
+          
