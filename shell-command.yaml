@@ -10,4 +10,11 @@
     - name: print the output
       debug:
         msg: "{{ suresh_output.stdout }}"
-      
+
+    - name: get the file
+      command: ls -la > /tmp/files.txt
+      register: files_output
+
+    - name: print the output    
+      debug:
+        msg: "{{ files_output.stdout }}"
